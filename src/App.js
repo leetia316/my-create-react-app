@@ -28,5 +28,6 @@ const mapStateToProps = (state) => {
     value: state.value
   }
 }
-
+//connect是由react-redux提供的辅助函数，作用是将store state里的值，映射到this.props
+//containerActions是把action里的方法绑定到当前组件，也就是App的this.props
 export default connect(mapStateToProps, containerActions)(App);
